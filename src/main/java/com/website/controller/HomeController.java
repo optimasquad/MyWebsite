@@ -3,13 +3,14 @@ package com.website.controller;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.OutputStream;
+import java.net.URL;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -61,11 +62,15 @@ public class HomeController {
 	}
 
 	@GetMapping(value = "/download")
-	public String downloadResume(HttpServletResponse response) {
+	public void downloadResume(HttpServletRequest request, HttpServletResponse response) {
 		try {
 			LOGGER.info("Clicking on download link");
-			final Resource resource = resourceLoader.getResource("classpath:Resume.pdf");
-			File downloadFile = resource.getFile();
+
+			// The class loader that loaded the class
+			ClassLoader classLoader = getClass().getClassLoader();
+			URL resource = classLoader.getResource("Resume.pdf");
+
+			File downloadFile = new File(resource.toURI());
 			LOGGER.info("finding download file" + downloadFile);
 			FileInputStream inputStream = new FileInputStream(downloadFile);
 
@@ -92,7 +97,6 @@ public class HomeController {
 			LOGGER.error("error occured" + e);
 			e.printStackTrace();
 		}
-		return "Resume/Resume";
 	}
 
 }
