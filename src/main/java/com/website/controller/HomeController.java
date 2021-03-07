@@ -1,10 +1,23 @@
 package com.website.controller;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.tomcat.util.http.fileupload.IOUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
+
+	@Autowired
+	private ResourceLoader resourceLoader;
 
 	@GetMapping(value = "/home")
 	public String index() {
@@ -40,6 +53,23 @@ public class HomeController {
 	@GetMapping(value = "/resume")
 	public String resume() {
 		return "Resume/Resume";
+	}
+
+	@GetMapping(value = "/download")
+	public void downloadResume(HttpServletResponse response) {
+		try {
+			final Resource resource = resourceLoader.getResource("classpath:Resume.pdf");
+			File file = resource.getFile();
+			String fileName = "Resume";
+			InputStream inputStream = new FileInputStream(file);
+			response.setContentType("application/force-download");
+			response.setHeader("Content-Disposition", "attachment; filename=" + fileName + ".pdf");
+			IOUtils.copy(inputStream, response.getOutputStream());
+			response.flushBuffer();
+			inputStream.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
