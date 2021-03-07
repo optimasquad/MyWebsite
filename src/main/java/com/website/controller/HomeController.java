@@ -2,11 +2,10 @@ package com.website.controller;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.InputStream;
+import java.io.OutputStream;
 
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
@@ -15,6 +14,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
+
+	private static final int BUFFER_SIZE = 4096;
 
 	@Autowired
 	private ResourceLoader resourceLoader;
@@ -59,12 +60,28 @@ public class HomeController {
 	public void downloadResume(HttpServletResponse response) {
 		try {
 			final Resource resource = resourceLoader.getResource("classpath:Resume.pdf");
-			File file = resource.getFile();
-			String fileName = "Resume";
-			InputStream inputStream = new FileInputStream(file);
-			response.setHeader("Content-Disposition", "attachment; filename=" + fileName + ".pdf");
-			IOUtils.copy(inputStream, response.getOutputStream());
-			response.flushBuffer();
+			File downloadFile = resource.getFile();
+			FileInputStream inputStream = new FileInputStream(downloadFile);
+
+			response.setContentType("application/force-download");
+			response.setContentLength((int) downloadFile.length());
+
+			String headerKey = "Content-Disposition";
+			String headerValue = String.format("attachment; filename=\"%s\"", downloadFile.getName());
+			response.setHeader(headerKey, headerValue);
+
+			OutputStream outStream = response.getOutputStream();
+
+			byte[] buffer = new byte[BUFFER_SIZE];
+			int bytesRead = -1;
+
+			while ((bytesRead = inputStream.read(buffer)) != -1) {
+				outStream.write(buffer, 0, bytesRead);
+			}
+
+			inputStream.close();
+			outStream.close();
+
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
