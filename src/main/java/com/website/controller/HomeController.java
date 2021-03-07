@@ -6,6 +6,8 @@ import java.io.OutputStream;
 
 import javax.servlet.http.HttpServletResponse;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(HomeController.class);
 
 	private static final int BUFFER_SIZE = 4096;
 
@@ -59,8 +63,10 @@ public class HomeController {
 	@GetMapping(value = "/download")
 	public String downloadResume(HttpServletResponse response) {
 		try {
+			LOGGER.info("Clicking on download link");
 			final Resource resource = resourceLoader.getResource("classpath:Resume.pdf");
 			File downloadFile = resource.getFile();
+			LOGGER.info("finding download file" + downloadFile);
 			FileInputStream inputStream = new FileInputStream(downloadFile);
 
 			response.setContentType("application/force-download");
@@ -83,6 +89,7 @@ public class HomeController {
 			outStream.close();
 
 		} catch (Exception e) {
+			LOGGER.error("error occured" + e);
 			e.printStackTrace();
 		}
 		return "Resume/Resume";
