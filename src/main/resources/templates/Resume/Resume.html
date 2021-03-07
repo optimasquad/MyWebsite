@@ -1,0 +1,673 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Jatin Mahajan - Resume</title>
+<head th:remove="tag" th:include="common/homeincludes :: includes" />
+<head th:remove="tag" th:include="common/homeincludes :: scriptinclude" />
+<link th:href="@{/css/animsition.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/flexslider.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/googleapi.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/heading.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/jquery.mCustomScrollbar.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"></link>
+
+<script th:src="@{/js/jquery-1.10.2.min.js}"></script>
+<script th:src="@{/js/animsition.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/heading.js}"></script>
+<script th:src="@{/js/imagesloaded.js}"></script>
+<script th:src="@{/js/jquery.flexslider.js}"></script>
+
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
+
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/masonry-3.1.4.js}"></script>
+<script th:src="@{/js/masonry.filter.js}"></script>
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<link rel="shortcut icon" type="image/x-icon"
+	th:href="@{/images/favicon.png}" />
+
+</head>
+<body>
+	<!-- LOADER -->
+	<div id="site-preloader" class="preload-complete">
+		<div class="preload-position">
+			<div class="preloading">
+				<div class="preloading-line"></div>
+				<div class="preloading-break preloading-line-1"></div>
+				<div class="preloading-break preloading-line-2"></div>
+				<div class="preloading-break preloading-line-3"></div>
+				<div class="preloading-break preloading-line-4"></div>
+				<div class="preloading-break preloading-line-5"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Loader /- -->
+
+
+
+	<div class="animsition" data-animsition-in-class="zoom-in"
+		data-animsition-in-duration="1000"
+		data-animsition-out-class="zoom-out"
+		data-animsition-out-duration="500">
+
+		<div class="outer-container resume-container">
+			<header>
+				<h2>Resume</h2>
+				<a class="page-close" th:href="@{/home}"></a>
+			</header>
+
+			<div class="main-container scroll-container">
+
+				<!-- row start -->
+				<div class="container-fluid">
+					<div class="row">
+						<!-- col start -->
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="content-box no-side-pad">
+										<h4 class="heading">
+											<span>Experience</span>
+										</h4>
+										<ul class="resume-list">
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-briefcase"></i>
+													</div>
+													<h5>BlackRock</h5>
+													<span>Associate</span>
+												</div>
+												<div class="resume-content">
+													<b>June 2018 - Present</b> <small>(2 Years and 9
+														months)</small>
+													<p>Working as a full stack developer responsible for
+														building spring boot swagger based microservices
+														integrated with Angular 8. Leaded offshore team size 5+
+														members.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-briefcase"></i>
+													</div>
+												</div>
+
+											</li>
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-briefcase"></i>
+													</div>
+													<h5>Amdocs Development Center</h5>
+													<span>R&amp;D Software Developer</span>
+												</div>
+												<div class="resume-content">
+													<b>July 2017 - June 2018</b> <small>(11 months)</small>
+													<p>Involved in Development and Designing of the
+														microservices for the communication with the database and
+														communicating the external systems to retrieve and store
+														the data. Created Tables, Stored procedures, Views
+														&amp;amp; Triggers using SQL Server. Leaded offshore team
+														size 3+ members.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-briefcase"></i>
+													</div>
+												</div>
+
+											</li>
+
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-briefcase"></i>
+													</div>
+													<h5>Tata Consultancy Services Gurgaon</h5>
+													<span>System Engineer</span>
+												</div>
+												<div class="resume-content">
+													<b>Dec 2015 - Current</b>
+													<p>Working as a developer and designer for the Web
+														Services .</p>
+													<div class="grid-icon small">
+														<i class="fa fa-briefcase"></i>
+													</div>
+												</div>
+
+											</li>
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-briefcase"></i>
+													</div>
+													<h5>Tata Consultancy Services London</h5>
+													<span>Web Designer</span>
+												</div>
+												<div class="resume-content">
+													<b>Dec 2015 - Dec 2016</b> <small>(1 year)</small>
+													<p>Involved in Development and Designing of the Web
+														Services for the communication with the database and
+														communicating the external systems to retrieve and store
+														the data. Created Tables, Stored procedures, Views
+														&amp;amp; Triggers using SQL Server. Leaded offshore team
+														size 3+ members.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-briefcase"></i>
+													</div>
+												</div>
+
+											</li>
+
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-send-o"></i>
+													</div>
+													<h5>Tata Consultancy Services Gurgaon</h5>
+													<span>System Engineer</span>
+												</div>
+												<div class="resume-content">
+													<b>Jun 2014 - Dec 2015</b> <small>(1 year and 6
+														months)</small>
+													<p>Designing and development of web services and
+														development of a tool for tcs internal to find the
+														dependency of the project on its various inbuilt classes
+														and save that classes in the form of the .xls file.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-send-o"></i>
+													</div>
+												</div>
+
+											</li>
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-send-o"></i>
+													</div>
+													<h5>Tata Consultancy Services Gurgaon</h5>
+													<span>Assistant System Engineer</span>
+												</div>
+												<div class="resume-content">
+													<b>Aug 2013 - Jun 2014</b> <small>(10 months)</small>
+													<p>Development of the Web Services for the
+														communication with the external Systems to fetch the
+														customer details and their billing details and integrating
+														to the billing module to generate the bill for the
+														customers.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-send-o"></i>
+													</div>
+												</div>
+
+											</li>
+
+
+										</ul>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- col end -->
+						<!-- col start -->
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="content-box no-side-pad">
+										<h4 class="heading">
+											<span>Education</span>
+										</h4>
+										<ul class="resume-list">
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-university"></i>
+													</div>
+													<h5>Birla Institute of Technology and Science(BITS Pilani)</h5>
+													<span>Master of Technology</span>
+												</div>
+												<div class="resume-content">
+													<b>2017 - 2019</b>
+													<p>Master of Technology in Software Systems
+														from BITS, Pilani, India.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-university"></i>
+													</div>
+												</div>
+
+											</li>
+											
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-university"></i>
+													</div>
+													<h5>Guru Nanak Dev University</h5>
+													<span>Bachelor of Technology</span>
+												</div>
+												<div class="resume-content">
+													<b>2009 - 2013</b>
+													<p>Bachelor of Technology in Electronics Communication
+														from Guru Nanak Dev University, Amritsar, India.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-university"></i>
+													</div>
+												</div>
+
+											</li>
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-laptop"></i>
+													</div>
+													<h5>CBSE</h5>
+													<span>Higher Secondary Course</span>
+												</div>
+												<div class="resume-content">
+													<b>2007 - 2009</b>
+													<p>Higer Secondary Course(12th Grade) from Bhavan's SL
+														Public School,Amritsar, India.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-laptop"></i>
+													</div>
+												</div>
+
+											</li>
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-laptop"></i>
+													</div>
+													<h5>CBSE</h5>
+													<span>Secondary Course</span>
+												</div>
+												<div class="resume-content">
+													<b>2007</b>
+													<p>Secondary Course(10th Grade) from Bhavan's SL Public
+														School,Amritsar, India.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-laptop"></i>
+													</div>
+												</div>
+
+											</li>
+											
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-laptop"></i>
+													</div>
+													<h5>Oracle University</h5>
+													<span>OCJP</span>
+												</div>
+												<div class="resume-content">
+													<b>2013 - 2014</b>
+													<p>Oracle Certified Java Programmer, India.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-laptop"></i>
+													</div>
+												</div>
+
+											</li>
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-laptop"></i>
+													</div>
+													<h5>Oracle University</h5>
+													<span>OCEJWSD</span>
+												</div>
+												<div class="resume-content">
+													<b>2015 - 2016</b>
+													<p>Oracle Certified Java Web Services Developer, India.</p>
+													<div class="grid-icon small">
+														<i class="fa fa-laptop"></i>
+													</div>
+												</div>
+
+											</li>
+											
+
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- col end -->
+						<!-- col start -->
+						<div class="col-md-4">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="content-box no-side-pad">
+										<h4 class="heading">
+											<span>Skills</span>
+										</h4>
+										<ul class="resume-list">
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-magic"></i>
+													</div>
+													<h5 class="one-line">Professional Skills</h5>
+
+												</div>
+												<div class="resume-content">
+													<div class="progress-box">
+														<p>Java Developer / MVC</p>
+														<div class="progress">
+															<div class="progress-bar" role="progressbar"
+																aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+																style="width: 90%">
+																<span class="sr-only">90%</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="resume-content">
+														<div class="progress-box">
+															<p>Angular 8</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="90" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 90%">
+																	<span class="sr-only">90%</span>
+																</div>
+															</div>
+														</div>
+
+
+														<div class="progress-box">
+															<p>Web Services</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="95" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 95%">
+																	<span class="sr-only">95%</span>
+																</div>
+															</div>
+														</div>
+
+														<div class="progress-box">
+															<p>JPA/Hibernate/Spring</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="80" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 80%">
+																	<span class="sr-only">80%</span>
+																</div>
+															</div>
+														</div>
+
+
+														<div class="progress-box">
+															<p>HTML 5 / Bootstrap / JQuery</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="65" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 65%">
+																	<span class="sr-only">65%</span>
+																</div>
+															</div>
+														</div>
+
+
+														<div class="progress-box">
+															<p>Oracle Database</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="85" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 85%">
+																	<span class="sr-only">85%</span>
+																</div>
+															</div>
+														</div>
+
+
+														<div class="progress-box">
+															<p>XML / XSLT</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="70" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 70%">
+																	<span class="sr-only">70%</span>
+																</div>
+															</div>
+														</div>
+														<div class="progress-box">
+															<p>IBM Websphere</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="60" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 60%">
+																	<span class="sr-only">60%</span>
+																</div>
+															</div>
+														</div>
+
+														<div class="progress-box">
+															<p>Node Js/Mongo DB</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="50" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 50%">
+																	<span class="sr-only">50%</span>
+																</div>
+															</div>
+														</div>
+														<div class="progress-box">
+															<p>AppDynamics/HP Diags</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="50" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 50%">
+																	<span class="sr-only">50%</span>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="grid-icon small">
+														<i class="fa fa-magic"></i>
+													</div>
+											</li>
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-language"></i>
+													</div>
+													<h5 class="one-line">Language Skills</h5>
+
+												</div>
+												<div class="resume-content">
+													<div class="progress-box">
+														<p>English</p>
+														<div class="progress">
+															<div class="progress-bar" role="progressbar"
+																aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+																style="width: 85%">
+																<span class="sr-only">85%</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="resume-content">
+														<div class="progress-box">
+															<p>French</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="95" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 85%">
+																	<span class="sr-only">85%</span>
+																</div>
+															</div>
+														</div>
+
+
+														<div class="progress-box">
+															<p>Hindi</p>
+															<div class="progress">
+																<div class="progress-bar" role="progressbar"
+																	aria-valuenow="55" aria-valuemin="0"
+																	aria-valuemax="100" style="width: 75%">
+																	<span class="sr-only">75%</span>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="progress-box">
+														<p>Punjabi</p>
+														<div class="progress">
+															<div class="progress-bar" role="progressbar"
+																aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
+																style="width: 75%">
+																<span class="sr-only">75%</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="grid-icon small">
+													<i class="fa fa-language"></i>
+												</div>
+
+
+											</li>
+
+											<li>
+												<div class="resume-title">
+													<div class="resume-icon">
+														<i class="fa fa-language"></i>
+													</div>
+													<h5 class="one-line">Other Skills</h5>
+
+												</div>
+												<div class="resume-content">
+													<div class="progress-box">
+														<p>Analytical/Problem Solving</p>
+														<div class="progress">
+															<div class="progress-bar" role="progressbar"
+																aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+																style="width: 95%">
+																<span class="sr-only">95%</span>
+															</div>
+														</div>
+													</div>
+													<div class="progress-box">
+														<p>Communication/Presentation</p>
+														<div class="progress">
+															<div class="progress-bar" role="progressbar"
+																aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
+																style="width: 75%">
+																<span class="sr-only">75%</span>
+															</div>
+														</div>
+													</div>
+
+													<div class="progress-box">
+														<p>Team Leader</p>
+														<div class="progress">
+															<div class="progress-bar" role="progressbar"
+																aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"
+																style="width: 85%">
+																<span class="sr-only">85%</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="grid-icon small">
+													<i class="fa fa-language"></i>
+												</div>
+
+
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- col end -->
+
+					</div>
+				</div>
+				<!-- row end -->
+
+				<!-- row start-->
+				<div class="overview-container">
+					<div class="overview-box color1">
+						<div class="grid-icon small">
+							<i class="fa fa-suitcase"></i>
+						</div>
+						<h1>18+</h1>
+						<h5>Projects Done</h5>
+					</div>
+					<div class="overview-box color3">
+						<div class="grid-icon small">
+							<i class="fa fa-smile-o"></i>
+						</div>
+						<h1>20+</h1>
+						<h5>Happy Clients</h5>
+					</div>
+					<div class="overview-box color4">
+						<div class="grid-icon small">
+							<i class="fa fa-flag"></i>
+						</div>
+						<h1>2</h1>
+						<h5>Personal Blogs</h5>
+					</div>
+					<div class="overview-box color5">
+						<div class="grid-icon small">
+							<i class="fa fa-trophy"></i>
+						</div>
+						<h1>12</h1>
+						<h5>Awards Won</h5>
+					</div>
+				</div>
+				<!-- row end-->
+				<footer>
+					<p>Copyright 2021 Jatin Mahajan. All rights reserved.</p>
+				</footer>
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

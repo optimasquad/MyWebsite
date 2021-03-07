@@ -1,0 +1,288 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Jatin Mahajan - About Me</title>
+<head th:remove="tag" th:include="common/homeincludes :: includes" />
+<head th:remove="tag" th:include="common/homeincludes :: scriptinclude" />
+
+<link th:href="@{/css/animsition.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/flexslider.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/googleapi.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/heading.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/jquery.mCustomScrollbar.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"></link>
+
+<script th:src="@{/js/jquery-1.10.2.min.js}"></script>
+<script th:src="@{/js/animsition.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/heading.js}"></script>
+<script th:src="@{/js/imagesloaded.js}"></script>
+<script th:src="@{/js/jquery.flexslider.js}"></script>
+
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
+
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/masonry-3.1.4.js}"></script>
+<script th:src="@{/js/masonry.filter.js}"></script>
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+<link rel="shortcut icon" type="image/x-icon"
+	th:href="@{/images/favicon.png}" />
+
+</head>
+<body>
+	<!-- LOADER -->
+	<div id="site-preloader" class="preload-complete">
+		<div class="preload-position">
+			<div class="preloading">
+				<div class="preloading-line"></div>
+				<div class="preloading-break preloading-line-1"></div>
+				<div class="preloading-break preloading-line-2"></div>
+				<div class="preloading-break preloading-line-3"></div>
+				<div class="preloading-break preloading-line-4"></div>
+				<div class="preloading-break preloading-line-5"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Loader /- -->
+
+
+
+	<div class="animsition" data-animsition-in-class="zoom-in"
+		data-animsition-in-duration="1000"
+		data-animsition-out-class="zoom-out"
+		data-animsition-out-duration="500">
+
+		<div class="outer-container about-container">
+			<header>
+				<h2>About Me</h2>
+				<a class="page-close" th:href="@{/home}"></a>
+			</header>
+			<div class="main-container  scroll-container">
+				<!-- row start-->
+				<div class="row table-row">
+					<div class="col-sm-4 my-img hidden-xs"></div>
+					<div class="col-sm-8">
+						<div class="content-box">
+							<h2 class="no-mar">Hi! I am Jatin Mahajan</h2>
+
+							<h5 class="cd-headline clip is-full-width">
+								I <span class="cd-words-wrapper"> <b class="is-visible">am
+										a Java Developer</b> <b>have 7+ Years Experience</b> <b>am
+										J2EE/MVC/WebServices Expert</b>
+								</span>
+							</h5>
+							<p>A person lives with non-countable moods in his entire life
+								and I am no different. Sometimes I may be damn serious, while
+								after few moments, you can see me smirking, even without any
+								reason.</p>
+							<p>Life never remains the same and my thinking also. I have a
+								tendency to forget all bad things that happens to me every day.
+								I live in present and thinks about future. A lot of dreams are
+								there, to make them true. So I believe in working hard and there
+								is no reason for me to wake up late in morning.</p>
+							<p>As a person, I am Flexible, Dedicative and Reliable. I do
+								not believe in regionalism, castes, discrimination based on
+								community, religion and respect the human diversity on this
+								earth. I call myself a global citizen, this whole planet is my
+								workplace. In my mind there's no point in doing anything
+								half-heartedly. I'd rather not do it at all.</p>
+							<p>My treasure of invaluable and great family &amp; friends,
+								who are/were/will (I hope for) always there with me, make me
+								feel super privileged.</p>
+							<ul class="socialLinks">
+								<li style="padding-top: 10px;">Find me on social network</li>
+								<li><a href="https://www.facebook.com/jatin.mahajan.735"
+									target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/jmahajan180"
+									target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- row end-->
+				<!-- row start-->
+				<div class="overview-container">
+					<div class="overview-box color2">
+						<div class="grid-icon small">
+							<i class="fa fa-simplybuilt"></i>
+						</div>
+						<h3>Residence</h3>
+						<h5>Gurugram, India</h5>
+					</div>
+					<div class="overview-box color3">
+						<div class="grid-icon small">
+							<i class="fa fa-phone"></i>
+						</div>
+						<h3>Phone</h3>
+						<h5>
+							<a href="tel:+919910704485">+91-9971549249</a>
+						</h5>
+					</div>
+					<div class="overview-box color4">
+						<div class="grid-icon small">
+							<i class="fa fa-at"></i>
+						</div>
+						<h3>Email</h3>
+						<h5>
+							<a href="mailto:jmahajan180@gmail.com">jmahajan180@outlook.com</a>
+						</h5>
+					</div>
+					<div class="overview-box color5">
+						<div class="grid-icon small">
+							<i class="fa fa-flag"></i>
+						</div>
+						<h3>Website</h3>
+						<h5>
+							<a th:href="@{/home}">https://jatinwebsite.azurewebsites.net/</a>
+						</h5>
+					</div>
+				</div>
+				<!-- row end-->
+				<!-- row start -->
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="content-box">
+							<div class="row mar-50">
+								<div class="col-md-12">
+									<h4 class="heading text-center">
+										<span>What can I do</span>
+									</h4>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4 col-sm-6">
+									<div class="service-box">
+										<i class="fa fa-desktop"></i>
+										<h5>Java Developer / MVC</h5>
+										<p>Java is a widely used programming language expressly
+											designed for use in the distributed environment of the
+											internet.</p>
+										<div class="grid-icon small">
+											<i class="fa fa-desktop"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="service-box">
+										<i class="fa fa-desktop"></i>
+										<h5>Restful WebServices and SOAP Webservices</h5>
+										<p>Web services are client and server applications that
+											communicate over the World Wide Web’s (WWW) HyperText
+											Transfer Protocol (HTTP).</p>
+										<div class="grid-icon small">
+											<i class="fa fa-desktop"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="service-box">
+										<i class="fa fa-desktop"></i>
+										<h5>Angular 8</h5>
+										<p>AAngular 8 is an open-source, client-side TypeScript
+											based JavaScript framework. It is written in TypeScript and
+											complied into JavaScript. Angular 8 is used to create dynamic
+											web applications.</p>
+										<div class="grid-icon small">
+											<i class="fa fa-desktop"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="service-box">
+										<i class="fa fa-paint-brush"></i>
+										<h5>HTML 5 / Bootstrap / JQuery</h5>
+										<p>HTML5 is a markup language used for structuring and
+											presenting content on the World Wide Web. Bootstrap is the
+											most popular HTML, CSS, and JavaScript framework for
+											developing responsive, mobile-first web sites. jQuery is a
+											cross-platform JavaScript library designed to simplify the
+											client-side scripting of HTML.</p>
+										<div class="grid-icon small">
+											<i class="fa fa-paint-brush"></i>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 col-sm-6">
+									<div class="service-box">
+										<i class="fa fa-database"></i>
+										<h5>Oracle SQL Server</h5>
+										<p>Oracle SQL Server is a relational database management
+											system developed by Microsoft. As a database server, it is a
+											software product with the primary function of storing and
+											retrieving data as requested by other software applications
+											which may run either on the same computer or on another
+											computer across a network.</p>
+										<div class="grid-icon small">
+											<i class="fa fa-database"></i>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6">
+									<div class="service-box">
+										<i class="fa fa-search"></i>
+										<h5>XML / XSLT</h5>
+										<p>Extensible Markup Language (XML) is a markup language
+											that defines a set of rules for encoding documents in a
+											format that is both human-readable and machine-readable.
+											Extensible Stylesheet Language Transformations (XSLT) is a
+											language for transforming XML documents into other formats
+											such as XML, HTML, plain text.</p>
+										<div class="grid-icon small">
+											<i class="fa fa-search"></i>
+										</div>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- row end -->
+				<!-- row end -->
+
+				<footer>
+					<p>Copyright 2021 Jatin Mahajan. All rights reserved.</p>
+				</footer>
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

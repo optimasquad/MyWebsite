@@ -1,0 +1,188 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Jatin Mahajan - Home</title>
+<link th:href="@{/css/animsition.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/flexslider.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/googleapi.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/heading.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/jquery.mCustomScrollbar.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"></link>
+
+<script th:src="@{/js/jquery-1.10.2.min.js}"></script>
+<script th:src="@{/js/animsition.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/heading.js}"></script>
+<script th:src="@{/js/imagesloaded.js}"></script>
+<script th:src="@{/js/jquery.flexslider.js}"></script>
+
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
+
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/masonry-3.1.4.js}"></script>
+<script th:src="@{/js/masonry.filter.js}"></script>
+
+
+<!--  <head th:remove="tag" th:include="/common/homeincludes :: includes" /> 
+<head th:remove="tag" th:include="/common/homeincludes :: scriptinclude" /> -->
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+<link rel="shortcut icon" type="image/x-icon"
+	th:href="@{/images/favicon.png}" />
+
+
+</head>
+<body>
+	<!-- LOADER -->
+	<div id="site-preloader" class="preload-complete">
+		<div class="preload-position">
+			<div class="preloading">
+				<div class="preloading-line"></div>
+				<div class="preloading-break preloading-line-1"></div>
+				<div class="preloading-break preloading-line-2"></div>
+				<div class="preloading-break preloading-line-3"></div>
+				<div class="preloading-break preloading-line-4"></div>
+				<div class="preloading-break preloading-line-5"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Loader /- -->
+	<ul class="grid-nav">
+		<li class="animsition" data-animsition-in-class="fade-in-down-lg"
+			data-animsition-in-duration="300"
+			data-animsition-out-class="zoom-out-lg"
+			data-animsition-out-duration="500">
+			<div class="head">Jatin Mahajan</div>
+		</li>
+
+		<li class="animsition" data-animsition-in-class="fade-in-down-lg"
+			data-animsition-in-duration="300"
+			data-animsition-out-class="zoom-out-lg"
+			data-animsition-out-duration="500"><a th:href="@{/about}"
+			class="animsition-link">
+				<div>
+					<div class="grid-icon">
+						<i class="fa fa-user-plus"></i>
+					</div>
+					<h2>About Me</h2>
+
+					<p class="cd-headline clip is-full-width">
+						<span class="cd-words-wrapper"> <b class="is-visible">Creativity
+								with Innovation</b> <b>7 years experience</b> <b>Senior Java Developer</b>
+						</span>
+					</p>
+
+					<em>view</em>
+				</div>
+		</a></li>
+
+		<li class="animsition" data-animsition-in-class="fade-in-down-lg"
+			data-animsition-in-duration="300"
+			data-animsition-out-class="zoom-out-lg"
+			data-animsition-out-duration="500"><a th:href="@{/resume}"
+			class="animsition-link">
+				<div>
+					<div class="grid-icon">
+						<i class="fa fa-file-text"></i>
+					</div>
+					<h2>Resume</h2>
+					<p class="cd-headline clip is-full-width">
+						<span class="cd-words-wrapper"> <b class="is-visible">Work
+								Experiences</b> <b>Educational Qualifications</b> <b>Professional
+								Skills</b>
+						</span>
+					</p>
+					<em>view</em>
+				</div>
+		</a></li>
+
+		<li class="animsition" data-animsition-in-class="fade-in-up-lg"
+			data-animsition-in-duration="300"
+			data-animsition-out-class="zoom-out-lg"
+			data-animsition-out-duration="500"><a th:href="@{/portfolio}"
+			class="animsition-link">
+				<div>
+					<div class="grid-icon">
+						<i class="fa fa-suitcase"></i>
+					</div>
+					<h2>Portfolio</h2>
+					<p class="cd-headline clip is-full-width">
+						<span class="cd-words-wrapper"> <b class="is-visible">Awards
+								and Recognition</b>
+						</span>
+					</p>
+					<em>view</em>
+				</div>
+		</a></li>
+
+		<li class="animsition" data-animsition-in-class="fade-in-up-lg"
+			data-animsition-in-duration="300"
+			data-animsition-out-class="zoom-out-lg"
+			data-animsition-out-duration="500"><a th:href="@{/blogs}"
+			class="animsition-link">
+				<div>
+					<div class="grid-icon">
+						<i class="fa fa-tags"></i>
+					</div>
+					<h2>Blogs</h2>
+					<p class="cd-headline clip is-full-width">
+						<span class="cd-words-wrapper"> <b class="is-visible">Awesome
+								Posts</b> <b>Many Categories</b>
+						</span>
+					</p>
+					<em>view</em>
+				</div>
+		</a></li>
+
+
+		<li class="animsition" data-animsition-in-class="fade-in-up-lg"
+			data-animsition-in-duration="300"
+			data-animsition-out-class="zoom-out-lg"
+			data-animsition-out-duration="500"><a th:href="@{/contact}"
+			class="animsition-link">
+				<div>
+					<div class="grid-icon">
+						<i class="fa fa-phone"></i>
+					</div>
+					<h2>Contact</h2>
+					<p class="cd-headline clip is-full-width">
+						<span class="cd-words-wrapper"> <b class="is-visible">Say
+								Hello</b> <b>Contact Details</b> <b>Social Network</b>
+						</span>
+					</p>
+					<em>view</em>
+				</div>
+		</a></li>
+
+	</ul>
+
+</body>
+</html>

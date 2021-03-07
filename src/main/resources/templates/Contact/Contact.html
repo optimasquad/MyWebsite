@@ -1,0 +1,184 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Jatin Mahajan - Contact</title>
+<head th:remove="tag" th:include="common/homeincludes :: includes" />
+<head th:remove="tag" th:include="common/homeincludes :: scriptinclude" />
+<link th:href="@{/css/animsition.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/flexslider.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/googleapi.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/heading.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/jquery.mCustomScrollbar.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"></link>
+
+<script th:src="@{/js/jquery-1.10.2.min.js}"></script>
+<script th:src="@{/js/animsition.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/heading.js}"></script>
+<script th:src="@{/js/imagesloaded.js}"></script>
+<script th:src="@{/js/jquery.flexslider.js}"></script>
+
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
+
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/masonry-3.1.4.js}"></script>
+<script th:src="@{/js/masonry.filter.js}"></script>
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+<link rel="shortcut icon" type="image/x-icon"
+	th:href="@{/images/favicon.png}" />
+
+<script th:inline="javascript">
+	$("document").ready(function() {
+		$("#btn").click(function() {
+
+			alert("Oops Something went wrong!!!Please try after some time...");
+
+			alert("Please contact at jmahajan1958@gmail.com");
+			//retrieving the form values
+		});
+
+	});
+</script>
+
+</head>
+<body>
+	<!-- LOADER -->
+	<div id="site-preloader" class="preload-complete">
+		<div class="preload-position">
+			<div class="preloading">
+				<div class="preloading-line"></div>
+				<div class="preloading-break preloading-line-1"></div>
+				<div class="preloading-break preloading-line-2"></div>
+				<div class="preloading-break preloading-line-3"></div>
+				<div class="preloading-break preloading-line-4"></div>
+				<div class="preloading-break preloading-line-5"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Loader /- -->
+
+
+	<div class="animsition" data-animsition-in-class="zoom-in"
+		data-animsition-in-duration="1000"
+		data-animsition-out-class="zoom-out"
+		data-animsition-out-duration="500">
+		<div class="outer-container contact-container">
+			<header>
+				<h2>Contact</h2>
+				<a class="page-close" th:href="@{/home}"></a>
+			</header>
+			<div class="main-container scroll-container">
+				<div class="contact-content">
+					<div class="map-container">
+						<div id="map-canvas"></div>
+					</div>
+					<div class="content-box">
+						<div class="contact-details">
+							<h5 class="heading">
+								<span>Get in Touch</span>
+							</h5>
+							<p>
+								<i class="fa fa-map-marker"></i> Gurugram, India
+							</p>
+							<p>
+								<i class="fa fa-at"></i> <b>Email : </b> <a
+									href="mailto:jmahajan1958@gmail.com">jmahajan180@outlook.com</a>
+							</p>
+							<p>
+								<i class="fa fa-phone"></i> <b>Phone : </b> <a
+									href="tel:+919910704485">+91-9971549249</a>
+							</p>
+							<ul class="socialLinks">
+								<li><a href="https://www.facebook.com/jatin.mahajan.735"
+									target="_blank"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://www.linkedin.com/in/jmahajan180"
+									target="_blank"><i class="fa fa-linkedin"></i></a></li>
+							</ul>
+						</div>
+						<h4 class="heading">
+							<span>Send me a Message</span>
+						</h4>
+						<p>Thanks for your visit. I would love to hear from you.
+							Please feel free to send me note or leave a comment.</p>
+						<form>
+							<div class="form-group">
+								<label for="Name">Name:</label> <input
+									class="form-control text-box single-line" data-val="true"
+									data-val-required="Name is required" id="Name" name="Name"
+									type="text" value="" /> <span class="field-validation-valid"
+									data-valmsg-for="Name" data-valmsg-replace="true"></span>
+							</div>
+							<div class="form-group">
+								<label for="Email">Email:</label> <input
+									class="form-control text-box single-line" data-val="true"
+									data-val-required="Email is required" id="Email" name="Email"
+									type="text" value="" /> <span class="field-validation-valid"
+									data-valmsg-for="Email" data-valmsg-replace="true"></span>
+							</div>
+							<div class="form-group">
+								<label for="Subject">Subject:</label> <input
+									class="form-control text-box single-line" data-val="true"
+									data-val-required="Subject is required" id="Subject"
+									name="Subject" type="text" value="" /> <span
+									class="field-validation-valid" data-valmsg-for="Subject"
+									data-valmsg-replace="true"></span>
+							</div>
+							<div class="form-group">
+								<label for="Message">Message:</label> <input
+									class="form-control text-box single-line" data-val="true"
+									data-val-required="Message is required" id="Message"
+									name="Message" type="text" value="" /> <span
+									class="field-validation-valid" data-valmsg-for="Message"
+									data-valmsg-replace="true"></span>
+							</div>
+							<div class="form-group text-right">
+								<input type="submit" id="btn" value="Send Message"
+									class="btn btn-primary" />
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<footer>
+					<p>Copyright 2021 Jatin Mahajan. All rights reserved.</p>
+				</footer>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+</body>
+</html>

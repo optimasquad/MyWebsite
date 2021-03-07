@@ -1,0 +1,138 @@
+<!doctype html>
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]>
+<html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>
+<html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge"></meta>
+<meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+<title>Jatin Mahajan - Blogs</title>
+<head th:remove="tag" th:include="common/homeincludes :: includes" />
+<head th:remove="tag" th:include="common/homeincludes :: scriptinclude" />
+<link th:href="@{/css/animsition.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/bootstrap.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/flexslider.css}" rel="stylesheet" type="text/css"></link>
+<link th:href="@{/css/font-awesome.min.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/googleapi.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/heading.css}" rel="stylesheet" type="text/css"></link>
+
+<link th:href="@{/css/jquery.mCustomScrollbar.css}" rel="stylesheet"
+	type="text/css"></link>
+
+<link th:href="@{/css/style.css}" rel="stylesheet" type="text/css"></link>
+
+<script th:src="@{/js/jquery-1.10.2.min.js}"></script>
+<script th:src="@{/js/animsition.min.js}"></script>
+<script th:src="@{/js/bootstrap.min.js}"></script>
+<script th:src="@{/js/custom.js}"></script>
+<script th:src="@{/js/heading.js}"></script>
+<script th:src="@{/js/imagesloaded.js}"></script>
+<script th:src="@{/js/jquery.flexslider.js}"></script>
+
+<script th:src="@{/js/jquery.mCustomScrollbar.concat.min.js}"></script>
+
+<script th:src="@{/js/jquery.min.js}"></script>
+<script th:src="@{/js/masonry-3.1.4.js}"></script>
+<script th:src="@{/js/masonry.filter.js}"></script>
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+  <link rel="shortcut icon" type="image/x-icon" th:href="@{/images/favicon.png}"/>
+</head>
+<body>
+	<!-- LOADER -->
+	<div id="site-preloader" class="preload-complete">
+		<div class="preload-position">
+			<div class="preloading">
+				<div class="preloading-line"></div>
+				<div class="preloading-break preloading-line-1"></div>
+				<div class="preloading-break preloading-line-2"></div>
+				<div class="preloading-break preloading-line-3"></div>
+				<div class="preloading-break preloading-line-4"></div>
+				<div class="preloading-break preloading-line-5"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Loader /- -->
+
+
+	<div class="animsition" data-animsition-in-class="zoom-in"
+		data-animsition-in-duration="1000"
+		data-animsition-out-class="zoom-out"
+		data-animsition-out-duration="500">
+
+		<div class="outer-container blog-container">
+			<header>
+				<h2>Blogs</h2>
+				<a class="page-close" th:href="@{/home}"></a>
+			</header>
+			<div class="main-container scroll-container">
+				<!-- row start-->
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="content-box">
+							<ul class="blog-list">
+								<li
+									th:style="'background-image: url('+@{/resources/images/blog-post1.jpg}+');'">
+									<a href="http://javabeasts.blogspot.in/" target="_blank">
+										<h3>www.javabeast.blogspot.in</h3>
+										<h6>Java Beast blogspot will make you aware of the
+											programming techniques and resolutions for the complex
+											problems in a simple way.Tried to come up with solutions
+											which we can easily achieving the goal to find,unrest the
+											ease of programming.</h6> <em>Take me to Blog</em>
+								</a>
+								</li>
+
+								<li
+									th:style="'background-image: url('+@{/resources/images/blog-post2.jpg}+');'">
+
+									<a href="http://awerso.blogspot.in/" target="_blank">
+										<h3>www.awerso.blogspot.in</h3>
+										<h6>Awerso blogspot discovers the tickling of human
+											minds.We try to look for the up's and downs of life.Might be
+											someday tensed or other day cherished with smile.Blog
+											remembers the rise from dark to dawn and from dawn to dark.</h6> <em>Take
+											me to Blog</em>
+								</a>
+								</li>
+
+							</ul>
+
+
+
+
+						</div>
+					</div>
+				</div>
+				<!-- row end-->
+				<footer>
+					<p>Copyright 2021 Jatin Mahajan. All rights reserved.</p>
+				</footer>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	
+</body>
+</html>
