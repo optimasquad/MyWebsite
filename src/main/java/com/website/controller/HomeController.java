@@ -57,7 +57,7 @@ public class HomeController {
 	}
 
 	@GetMapping(value = "/download")
-	public void downloadResume(HttpServletResponse response) {
+	public String downloadResume(HttpServletResponse response) {
 		try {
 			final Resource resource = resourceLoader.getResource("classpath:Resume.pdf");
 			File downloadFile = resource.getFile();
@@ -85,6 +85,7 @@ public class HomeController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		return "Resume/Resume";
 	}
 
 }
