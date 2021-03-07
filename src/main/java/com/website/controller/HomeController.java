@@ -62,11 +62,9 @@ public class HomeController {
 			File file = resource.getFile();
 			String fileName = "Resume";
 			InputStream inputStream = new FileInputStream(file);
-			response.setContentType("application/force-download");
 			response.setHeader("Content-Disposition", "attachment; filename=" + fileName + ".pdf");
 			IOUtils.copy(inputStream, response.getOutputStream());
 			response.flushBuffer();
-			inputStream.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
