@@ -51,8 +51,8 @@
 				<version>1.7.0</version>
 				<configuration>
 					<schemaVersion>V2</schemaVersion>
-					<resourceGroup>jatinmahajan28-rg</resourceGroup>
-					<appName>jatinmahajan28</appName>
+					<resourceGroup>jatinmahajan18-rg</resourceGroup>
+					<appName>jatinmahajan18</appName>
 					<pricingTier>B1</pricingTier>
 					<region>westeurope</region>
 					<!-- Begin of App Settings -->
